@@ -2,26 +2,25 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Car car1 = new Car();
-        Car car2 = new Car();
+        Student s1 = new Student();
+        Student s2 = new Student();
 
-        car1.make = "Ford";
-        car1.model = "Mustang";
-        car1.isRunning = true;
-        System.out.println(car1.make);
-        System.out.println(car1.model);
-        car1.startCar();
-        System.out.println("Is Car 1 Running? " + car1.isRunning);
+        s1.name = "Maria";
+        s1.age = 20;
+        s1.grade = 60;
+        s2.name = "Khugo";
+        s2.age = 19;
+        s2.grade = 100;
 
+        System.out.println("Name: " + s1.name);
+        System.out.println("Age: " + s1.age);
+        System.out.println("Grade: " + s1.grade);
+        s1.checkGrade();
 
-        car2.make = "Porsche";
-        car2.model = "911";
-        car2.isRunning = false;
-        System.out.println(car2.make);
-        System.out.println(car2.model);
-        System.out.println(car2.isRunning);
-        car2.startCar();
-        System.out.println("Is Car 2 Running? " + car2.isRunning);
+        System.out.println("Name: " + s2.name);
+        System.out.println("Age: " + s2.age);
+        System.out.println("Grade: " + s2.grade);
+        s2.checkGrade();
 
 
     }
